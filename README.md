@@ -32,7 +32,9 @@ learning purposes and should not be used in a production environment.
     npm install
 3. Set up environment variables:
     Create a .env file in the root directory of the project and add your environment variables:
-    # .env
+
     NODE_ENV=development
+    
     SQLITE_DB_PATH=./database.db
+    
     MONGO_URI=mongodb://localhost:27017/real_estate_app
