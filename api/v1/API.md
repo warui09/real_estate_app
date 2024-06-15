@@ -55,19 +55,54 @@ though it does not match the site's functionality.
 
     - Commercial
         - Offices:
-            - **Endpoint**: /offices-for-sale
+            - **Endpoint**: `/offices-for-rent`
             - **Methods**:
-                - GET /offices-for-sale: List all offices for sale
-                - POST /offices-for-sale: Add a new office for sale
+                - `GET /offices-for-rent`: List all offices for rent
+                - `POST /offices-for-sale`: Add a new office for rent
         - Shops
+	    - **Endpoint**: `/shops-for-rent`
+	    - **Methods**:
+	        - `GET /shops-for-rent`: List all shops for rent
+		- `POST /shops-for-rent`: Add new shop for rent
         - Warehouses
+	    - **Endpoint**: `/warehouses-for-rent`
+	    - **Methods**:
+	        - `GET /warehouses-for-rent`: List all warehouses for rent
+		- `POST /warehouses-for-rent`: Add new warehouse for rent
     - Residential
         - Houses
             - Villas
+	        - **Endpoint**: `/villas-for-rent`
+		- **Methods**:
+		    - `GET /villas-for-rent`: List all villas for rent
+		    - `POST /villas-for-rent`: Add new villa for rent
             - Townhouses
+	        - **Endpoint**: `/townhouses-for-rent`
+		- **Methods**:
+		    - `GET /townhouses-for-rent`: List all townhouses for rent
+		    - `POST /townhouses-for-rent`: Add new townhouse for rent
         - Appartments
+	    - **Endpoint**: `/appartments-for-rent`
+	    - **Methods**:
+	        - `GET /appartments-for-rent`: List all appartments for rent
+		- `POST /appartments-for-rent`: Add new appartment for rent
     - Land
+        - **Endpoint**: `/land-for-rent`
+	- **Methods**:
+	    - `GET /land-for-rent`: List all land for rent
+	    - `POST /land-for-rent`: Add land for rent
 
 #### Single
-- User
 - Admin
+    - **Endpoint**: `/admins{id}`
+    - **Methods**:
+        - `GET /admins{id}`: Retrieve a specific admin by ID
+	- `PUT /admins/{id}`: Update a specific admin by ID
+	- `DELETE /admins/{id}: Delete a specific admin by ID
+
+- User
+    - **Endpoint**: `/users/{id}`
+    - **Methods**:
+        - `GET /users/{id}`: Retrieve a specific user by ID
+	- `PUT /users/{id}`: Update a specific user by ID
+	- `DELETE /users/{id}`: Delete a specific user by ID
