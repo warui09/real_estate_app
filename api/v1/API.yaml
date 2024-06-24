@@ -1,0 +1,70 @@
+openapi: 3.0.3
+info:
+  title: Real Estate API
+  version: v1
+servers:
+  # development environment
+  - url: http://localhost:3000
+paths:
+  /commercial-property-for-sale:
+    get:
+      responses:
+        '200':
+          description: Returns all commercial properties for sale
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    title:
+                      type: string
+                    location:
+                      type: string
+                    images:
+                      type: string
+                    description:
+                      type: string
+                    basic_info:
+                      type: object
+                      properties:
+                        date_created:
+                          type: string
+                        amenities:
+                          type: array
+                          items:
+                            type: string
+                        features:
+                          type: object
+                          properties:
+                            internal_features:
+                              type: array
+                              items:
+                                type: string
+                            external_features:
+                              type: array
+                              items:
+                                type: string
+                            nearby:
+                              type: array
+                              items:
+                                type: string
+                    similar_properties:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          title:
+                            type: string
+                          location:
+                            type: string
+                    contact_details:
+                      type: object
+                      properties:
+                        user_name:
+                          type: string
+                        phone_number:
+                          type: string
+                        email:
+                          type: string
